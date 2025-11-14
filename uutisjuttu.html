@@ -11,6 +11,8 @@
     <body id="body">
         <header>
             <h1>tässä on sinulle mahtavia uutisia(ei siis mahtavia vaan hienoja suurin osa luultavasti aika surkeita)</h1>
+
+            <button id="tummatilanappi">Tumman tila päälle/pois</button>
         </header>
         <main>
             <div class="huonoartikkeli">
@@ -31,5 +33,15 @@
                 <p class="uutisteksti">Lähde: AFP</p>
             </div>
         </main>
+
+        <script>
+            const btn = document.getElementById('tummatilanappi');
+            const body = document.getElementById('body');
+        
+            btn.addEventListener('click', () => {
+                body.classList.toggle('tummatila');
+            });
+        </script>
+
     </body>
 </html>

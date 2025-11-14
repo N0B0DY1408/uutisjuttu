@@ -4,17 +4,26 @@
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
-    margin: 5px;
+    padding: 10px;
     }
+
+html {
+        height: 100%;
+}
 
 #body, main {
     background-color: beige;
-    margin: 5px;
+    margin: 0px;
+    min-height: 100%;
 }
 
 .tummatila {
     background-color: rgb(70, 70, 59);
     color: white;
+}
+
+.tummatila header, .tummatila main, .tummatila #body, .tummatila head, .tummatila html {
+    background-color: rgb(70, 70, 59);
 }
 
 
@@ -27,7 +36,7 @@
     max-width: 750px;
 }
 
-.tummahuonoartikkeli {
+.tummatila .huonoartikkeli {
     display: inline-block;
     background-color: rgb(12, 12, 12);
     border: 4px solid rgb(0, 0, 58);
@@ -45,7 +54,7 @@
     max-width: 750px;
 }
 
-.tummahyvaartikkeli {
+.tummatila .hyvaartikkeli {
     display: inline-block;
     background-color: rgb(87, 87, 87);
     border: 4px solid rgb(0, 0, 58);
