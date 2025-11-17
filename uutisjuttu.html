@@ -8,10 +8,11 @@
         <link rel="stylesheet" href="uutistyyli.css" />
         <title>mahtavaia uutisia</title>
     </head>
+
     <body id="body">
         <header>
-            <button id="pääsivu"><a href="uutisjuttu.html">Pääsivu</a></button>
-            <button id="jokusivu"><a href="joku.html">Jokusivu</a></button>
+            <button id="pääsivu" class="tabactive"><a href="uutisjuttu.html">Pääsivu</a></button>
+            <button id="jokusivu" class="tab"><a href="joku.html">Jokusivu</a></button>
         </header>
 
         <nav>
@@ -55,14 +56,8 @@
             </div>
         </main>
 
-        <script>
-            const btn = document.getElementById('tummatilanappi');
-            const body = document.getElementById('body');
-        
-            btn.addEventListener('click', () => {
-                body.classList.toggle('tummatila');
-            });
-        </script>
+        <script src="tummatila.js"></script>
+
         
     </body>
 </html>
