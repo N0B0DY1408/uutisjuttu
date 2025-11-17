@@ -1,4 +1,4 @@
-#head, header {
+#head {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     background-color: beige;
     background-position: center; 
@@ -7,9 +7,29 @@
     padding: 10px;
     }
 
+nav {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    background-color: beige;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 10px;
+}
+
 html {
         height: 100%;
 }
+
+header {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    background-color: beige;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    gap: 10px   ;
+    }
 
 #body, main {
     background-color: beige;
@@ -22,7 +42,7 @@ html {
     color: white;
 }
 
-.tummatila header, .tummatila main, .tummatila #body, .tummatila head, .tummatila html {
+.tummatila header, .tummatila main, .tummatila #body, .tummatila head, .tummatila html, .tummatila nav {
     background-color: rgb(70, 70, 59);
 }
 
@@ -54,4 +74,14 @@ html {
 .uutisteksti {
     font-family: 'Courier New', Courier, monospace;
     margin: 20px;
+}
+
+#tummatilanappi {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+}
+
+#pääsivu, #jokusivu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
 }

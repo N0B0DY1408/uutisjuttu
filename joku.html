@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="uutistyyli.css" />
+        <title>jotain uutisia</title>
+    </head>
+    <body id="body">
+        <header>
+            <button id="pääsivu"><a href="uutisjuttu.html">Pääsivu</a></button>
+            <button id="jokusivu"><a href="joku.html">Jokusivu</a></button>
+        </header>
+
+        <nav>
+            <h1>tässä on sinulle mahtavia uutisia jostain kategoriasta</h1>
+
+            <button id="tummatilanappi">Tumman tila päälle/pois</button>
+        </nav>
+
+        <main>
+            <div class="artikkeli">
+                
+            </div>
+
+            <div class="artikkeli">
+                
+            </div>
+        </main>
+
+        <script>
+            const btn = document.getElementById('tummatilanappi');
+            const body = document.getElementById('body');
+        
+            btn.addEventListener('click', () => {
+                body.classList.toggle('tummatila');
+            });
+        </script>
+        
+    </body>
+</html>
