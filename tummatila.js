@@ -8,8 +8,15 @@ const setTheme = (value) => {
         html.classList.add("tummatila");
         button.textContent = "Vaalea tila";
     } else {
-        html.classList.remove("tummatila");
-        button.textContent = "Tumma tila";
+        if (typeof pelottava !== 'undefined') {
+            // PELOTTAVAA KOODIA!!
+            getElementById
+            // 
+        }
+        else {
+            html.classList.remove("tummatila");
+            button.textContent = "Tumma tila";
+        }
     }
 
     theme = value;

@@ -1,0 +1,19 @@
+.kauhuteema {
+    background-image: url(kauhua.gif);
+    color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.kauhuteema header, main, nav {
+    color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.kauhuteema .artikkeli {
+    background-color: rgb(105, 0, 21);
+    border-color: black;
+}
+
+.kauhuteema a {
+    color: rgb(155, 101, 0);
+}
