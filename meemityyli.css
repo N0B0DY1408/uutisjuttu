@@ -1,0 +1,124 @@
+#body {
+    background-image: url(kuvat/meemi.gif);
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    animation: headerRgb 6s linear infinite;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}   
+
+header, main, nav {
+    color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    animation: rgbloop 6s linear infinite;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+h1 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 75px;
+    animation: rgbloop 6s linear infinite;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+h3 {
+    font-size: 45px ;
+    animation: rgbloop 6s linear infinite;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+.artikkeli {
+    border: 5px solid;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 750px;
+    margin: 10px auto;
+    float: none;    
+    font-size: 25px;
+    animation: rgbloop 6s linear infinite;
+    background-image:url(kuvat/sateenkaari.gif) ;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+a {
+    animation: rgbloop 6s linear infinite;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+nav {
+    padding: 10px;
+    animation: rgbloop 6s linear infinite;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+.tabactive {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: cyan;
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+
+.tab {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-image: url(kuvat/sateenkaari.gif);
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+
+.easter_egg {
+    color: black;
+}
+
+@keyframes rgbLoop {
+    0% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); border-color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); border-color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
+}
+
+body, table, th, td, nav, main, section, aside, footer, .artikkeli, .tab, .tabactive {
+    animation: rgbLoop 6s linear infinite;
+}

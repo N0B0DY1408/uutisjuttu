@@ -16,11 +16,21 @@ const setTheme = (value) => {
             }   
             //
         }
+        if (typeof meemi !== 'undefined' && meemi === true) {
+            //hasua koodia
+            const link = document.getElementById("themeStylesheet");
+            if (link) {
+                link.href = "meemityyli.css";
+            }
+        }       
         else { // NORMAALI VAALEA TEEEMA KOODI
             html.classList.remove("tummatila");
             button.textContent = "Tumma tila";
             if (typeof pelottava !== 'undefined') {
                 pelottava = true;
+            }
+            if (typeof meemi !== 'undefined') {
+                meemi = true;
             }
         }
     }
