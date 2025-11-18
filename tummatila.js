@@ -7,8 +7,8 @@ const setTheme = (value) => {
     if (value === "dark") {
         html.classList.add("tummatila");
         button.textContent = "Vaalea tila";
-    } else {
-        if (typeof pelottava !== 'undefined') {
+    } else { // VAALEA
+        if (typeof pelottava !== 'undefined' && pelottava === true) {
             //pelottavaa koodia
             const link = document.getElementById("themeStylesheet");
             if (link) {
@@ -16,9 +16,12 @@ const setTheme = (value) => {
             }   
             //
         }
-        else {
+        else { // NORMAALI VAALEA TEEEMA KOODI
             html.classList.remove("tummatila");
             button.textContent = "Tumma tila";
+            if (typeof pelottava !== 'undefined') {
+                pelottava = true;
+            }
         }
     }
 
