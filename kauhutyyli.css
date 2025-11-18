@@ -1,19 +1,61 @@
-.kauhuteema {
+#body {
     background-image: url(kauhua.gif);
     color: black;
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
-.kauhuteema header, main, nav {
+header, main, nav {
     color: black;
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
-.kauhuteema .artikkeli {
-    background-color: rgb(105, 0, 21);
-    border-color: black;
+h1 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 75px;
 }
 
-.kauhuteema a {
+h3 {
+    font-size: 45px ;
+}
+
+.artikkeli {
+    background-color: rgb(69, 0, 14);
+    border: 4px solid rgb(125, 0, 25);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 750px;
+    margin: 10px auto;
+    float: none;
+    color: black;
+    font-size: 25px;
+}
+
+a {
     color: rgb(155, 101, 0);
+}
+
+nav {
+    color: rgb(105, 0, 21   );
+    padding: 10px;
+}
+
+.tabactive {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: black;
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+
+.tab {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: rgb(105, 0, 21);
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+
+.easter_egg {
+    color: black;
 }

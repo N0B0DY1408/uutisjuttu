@@ -124,3 +124,11 @@ a {
 .tummatila a {
     color: aqua;
 }
+
+.easter_egg {
+    color: beige;
+}
+
+.tummatila .easter_egg {
+    color: rgb(70, 70, 59);
+}

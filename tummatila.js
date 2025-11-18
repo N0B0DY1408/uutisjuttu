@@ -9,9 +9,12 @@ const setTheme = (value) => {
         button.textContent = "Vaalea tila";
     } else {
         if (typeof pelottava !== 'undefined') {
-            // PELOTTAVAA KOODIA!!
-            getElementById
-            // 
+            //pelottavaa koodia
+            const link = document.getElementById("themeStylesheet");
+            if (link) {
+                link.href = "kauhutyyli.css";
+            }   
+            //
         }
         else {
             html.classList.remove("tummatila");
