@@ -11,11 +11,12 @@
 
         <body id="body">
             <header>
-                <button id="pääsivu" class="tabactive"><a href="uutisjuttu.html">Pääsivu</a></button>
-                <button id="kauhusivu" class="tab"><a href="kauhusivu.html">Kauhusivu</a></button>
-                <button id="mahtavasivu" class="tab"><a href="mahatavasivu.html">Mahatavasivu</a></button>
-                <button id="meemisivu" class="tab"><a href="meemisivu.html">Meemisivu</a></button>
-                <button id="uusiartikkeli" class="NAPPI"><a href="luoUusiArtikkeli.html">Luo uusi artikkeli</a></button>
+                <button id="pääsivu" class="tabactive"><a href="uutisjuttu.php">Pääsivu</a></button>
+                <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
+                <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
+                <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
+                <button id="kirjaudu" class="NAPPI"><a href="kirjaudu/....php">kirjaudu</a></button>
+               
             </header>
 
             <nav>
@@ -58,9 +59,6 @@
                     <a href="https://yle.fi/a/74-20193977">Avaa koko juttu yle:n sivuilla</a>
                 </div>
 
-                <div class="artikkeli">
-
-                </div>
             </main>
 
             <script src="kaikkimahollinen.js"></script>

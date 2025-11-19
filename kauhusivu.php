@@ -11,11 +11,12 @@
 
     <body id="body">
         <header>
-            <button id="pääsivu" class="tab"><a href="uutisjuttu.html">Pääsivu</a></button>
-            <button id="jokusivu" class="tabactive"><a href="kauhusivu.html">kauhuasivu</a></button>
-            <button id="mahtavasivu" class="tab"><a href="mahatavasivu.html">mahatavasivu</a></button>
-            <button id="meemisivu" class="tab"><a href="meemisivu.html">Meemisivu</a></button>
-            <button id="uusiartikkeli" class="NAPPI"><a href="luoUusiArtikkeli.html">Luo uusi artikkeli</a></button>
+            
+            <button id="pääsivu" class="tab"><a href="uutisjuttu.php">Pääsivu</a></button>
+            <button id="jokusivu" class="tabactive"><a href="kauhusivu.php">kauhuasivu</a></button>
+            <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">mahatavasivu</a></button>
+            <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
+
         </header>
 
         <nav>
