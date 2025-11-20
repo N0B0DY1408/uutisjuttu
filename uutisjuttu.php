@@ -15,7 +15,7 @@
                 <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
                 <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
                 <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
-                <button id="kirjaudu" class="NAPPI"><a href="kirjaudu/....php">kirjaudu</a></button>
+                <button id="kirjaudu" class="tabkirjaudu"><a href="kirjaudu/rekisteröidy.php">kirjaudu</a></button>
                
             </header>
 

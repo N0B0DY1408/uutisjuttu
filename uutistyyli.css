@@ -133,6 +133,20 @@ a {
     color: rgb(70, 70, 59);
 }
 
-.NAPPI {
-    margin-left: auto;
+.tabkirjaudu {
+    margin-left: 675px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: rgb(70, 70, 59);
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+
+.tummatila .tabkirjaudu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 6px 6px 0 0; 
+    border-bottom: none;
+    margin-left: 675px;
 }
