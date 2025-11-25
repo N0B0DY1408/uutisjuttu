@@ -67,7 +67,7 @@ h3 {
     float: none;    
     font-size: 25px;
     animation: rgbloop 6s linear infinite;
-    background-image:url(kuvat/sateenkaari.gif) ;
+    background-image:url(kuvat/sateenkaari.gif);
 }
 
 @keyframes rgbLoop {
@@ -141,4 +141,9 @@ body, table, th, td, nav, main, section, aside, footer, .artikkeli, .tab, .tabac
     background-image: url(kuvat/sateenkaari.gif);
     border-radius: 6px 6px 0 0;
     border-bottom: none;
+}
+
+img {
+    width: 750px;
+    height: 550px;
 }

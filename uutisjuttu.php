@@ -28,44 +28,41 @@
             <button id="tummatilanappi">Tumman tila päälle/pois</button>
         </nav>
 
+
         <main>
-            <div class="artikkeli">
-                <h2 class="uutisotsikko">Yhdysvallat aloittaa uuden sotilasoperaation Latinalaisessa Amerikassa</h2>
+            
+        <?php
+            require "./kirjaudu/connect.php";
+            $sql = "SELECT * FROM uutinen WHERE kategoria = 1 ORDER BY id";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="artikkeli">';
+                    echo '<h2 class="uutisotsikko">';
+                    echo $row['otsikko'];
+                    echo "</h2>";
+                    echo'<img src="';
+                    echo $row['kuva'];
+                    echo '">';
+                    echo "<p class='kuvateksti'>";
+                    echo $row['kuvateksti'];
+                    echo "</p>";
+                    echo "<p class='uutisteksti'>";
+                    echo $row['teksti'];
+                    echo "</p>";
+                    echo "</div>";
+                }
+            } else {
+            echo "yhteys tietokantaan on katkennut tai jotain muuta meni päin persettä <br>";
+            echo "<img src='kuvat/thumbs-down.gif'>";
+            }
 
-                <a href="https://yle.fi/p/56-74-29/fi" class="uutiteksti">Jaakko Mannermaa</a>
-
-                <p>6:49</p>
-
-                <img src="https://images.cdn.yle.fi/image/upload/ar_1.5001464986815118,c_fill,g_faces,h_423,w_636/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1763096800/39-15536296916b85953e0a" width="750" height="550">
-                <figcaption>Yhdysvaltain puolustusministeri Pete Hegseth puhui merijalkaväen 250-vuotisjuhlassa Kaliforniassa<br>18. lokakuuta. Kuva: Oliver Contreras / AFP</figcaption>
-
-                <p class="uutisteksti">Yhdysvallat on ilmoittanut uudesta sotilasoperaatiosta Latinalaisessa Amerikassa.Tarkoituksena on ”poistaa huumeterroristeja”.</p>
-                <p class="uutisteksti">Asiasta kertoi Yhdysvaltain puolustusministeri Pete Hegseth torstaina <a href="https://x.com/SecWar/status/1989094923497316430">viestipalvelu X:ssä.</a></p>
-                <p class="uutisteksti">-Operaatio puolustaa kotimaatamme, poistaa huumeterroristit pallonpuoliskoltammeja suojelee kansaamme huumeilta, hän kirjoitti.</p>
-                <p class="uutisteksti">Toistaiseksi ei ole tietoa, mitä alueita Southern Speariksi nimetty operaatio koskee. Lisäksi on epäselvää, miten operaatio muuttaa nykyistä tilannetta.</p>
-                <p class="uutisteksti">Syksyn aikana Yhdysvallat on iskenyt pariinkymmeneen alukseen kansainvälisillä vesillä Karibialla ja itäisellä Tyynellämerellä. Yhdysvaltain mukaan iskuissa on kuollut ainakin 76 ihmistä.</p>
-                <p class="uutisteksti">Lähde: AFP</p>
-            </div>
-
-            <div class="artikkeli">
-                <h2 class="uutisotsikko">Kansalaisaloite vesihuollon yksityistämistä vastaan etenee</h2>
-
-                <a href="https://yle.fi/p/56-74-496/fi">Hanna Holopainen</a>
-
-                <p>7:37</p>
-
-                <img src="https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1756227184/39-151171468ac1b2d8de2f" width="750" height="550">
-                <figcaption>Lain muutoksen henki on, että vesihuolto halutaan pitää yhteisenä omaisuutena. Asiaa perustellaan myös muun muassa huoltovarmuudella. Kuvituskuva. Kuva: Kalle Niskala / Yle</figcaption>
-
-                <p class="uutisteksti">Kuuden vasemmistopoliitikon ryhmä laati julkista vesihuoltoa vaativan aloitteen vuonna 2020. Aloitetta myötäilevä vesihuoltolain muutos näyttäisi toteutuvan perjantaina.</p>
-
-                <a href="https://yle.fi/a/74-20193977">Avaa koko juttu yle:n sivuilla</a>
-            </div>
+        ?>
 
         </main>
 
         <script src="kaikkimahollinen.js"></script>
 
-        <a href="easter_egg.html" class="easter_egg">easter_egg</a>
+        <a href="easter_egg.php" class="easter_egg">easter_egg</a>
     </body>
 </html>

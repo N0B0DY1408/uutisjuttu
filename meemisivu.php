@@ -28,18 +28,35 @@
         </nav>
 
         <main>
-            <div class="artikkeli">
 
-            <h1>Dissaster girl</h1>
-            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/F1F2/production/_118283916_b19c5a1f-162b-410b-8169-f58f0d153752.jpg.webp" width="750" height="300">
-            </div>
+        <?php
+            require "./kirjaudu/connect.php";
+            $sql = "SELECT * FROM uutinen WHERE kategoria = 4 ORDER BY id";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="artikkeli">';
+                    echo '<h2 class="uutisotsikko">';
+                    echo $row['otsikko'];
+                    echo "</h2>";
+                    echo'<img src="';
+                    echo $row['kuva'];
+                    echo '">';
+                    echo "<p class='kuvateksti'>";
+                    echo $row['kuvateksti'];
+                    echo "</p>";
+                    echo "<p class='uutisteksti'>";
+                    echo $row['teksti'];
+                    echo "</p>";
+                    echo "</div>";
+                }
+            } else {
+                echo "yhteys tietokantaan on katkennut tai jotain muuta meni päin persettä <br>";
+                echo "<img src='kuvat/thumbs-down.gif'>";
+            }
 
-            <div class="artikkeli">
-                
-                <h1>Success kid</h1>
-                <img src="https://scx1.b-cdn.net/csz/news/800a/2025/ai-churns-out-funnier.jpg" width="750" height="250">
+            ?>
             
-            </div>
         </main>
 
         <script>var meemi = false; </script>

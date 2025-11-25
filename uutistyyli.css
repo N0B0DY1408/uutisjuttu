@@ -79,9 +79,14 @@ main {
     margin: 10px;
 }
 
+.kuvateksti {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
 .uutisteksti {
     font-family: 'Courier New', Courier, monospace;
-    margin: 20px;
+    margin: 10px;
 }
 
 #tummatilanappi {
@@ -148,4 +153,13 @@ a {
     background-color: beige;
     border-radius: 6px 6px 0 0; 
     border-bottom: none;
+}
+
+img {
+    width: 750px;
+    height: 550px;
+}
+
+footer {
+    display: none;
 }

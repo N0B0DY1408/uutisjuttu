@@ -10,6 +10,7 @@
         </head>
 
         <body id="body">
+
             <header>
                 <button id="pääsivu" class="tab"><a href="uutisjuttu.php">Pääsivu</a></button>
                 <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
@@ -29,19 +30,34 @@
             </nav>
 
             <main>
-                <div class="artikkeli">
-                
-                    <h1>ei maha mitään</h1>
-                    <img src="https://images-bonnier.imgix.net/files/ill/production/2022/08/08104520/hvorfor-faar-maend-en-dunk-med-alderen-topbillede.jpg?auto=format,compress&crop=focalpoint&fp-x=0.5&fp-y=0.5&ar=1.4435695538057742:1&w=512&q=80&fit=crop">
-                
-                </div>  
 
-                <div class="artikkeli">
+                <?php
+                require "./kirjaudu/connect.php";
+                $sql = "SELECT * FROM uutinen WHERE kategoria = 3 ORDER BY id";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo '<div class="artikkeli">';
+                        echo '<h2 class="uutisotsikko">';
+                        echo $row['otsikko'];
+                        echo "</h2>";
+                        echo'<img src="';
+                        echo $row['kuva'];
+                        echo '">';
+                        echo "<p class='kuvateksti'>";
+                        echo $row['kuvateksti'];
+                        echo "</p>";
+                        echo "<p class='uutisteksti'>";
+                        echo $row['teksti'];
+                        echo "</p>";
+                        echo "</div>";
+                    }
+                } else {
+                echo "yhteys tietokantaan on katkennut  <br>";
+                echo "<img src='kuvat/thumbs-down.gif'>";
+                }
 
-                    <h1>kuhan koodaan</h1>
-                    <img src="kuvat/kuha koodaa.jpg" width="750" height="300">
-
-                </div>
+                ?>
 
             </main>
 
