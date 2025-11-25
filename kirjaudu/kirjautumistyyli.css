@@ -14,6 +14,8 @@ nav {
     background-repeat: no-repeat; 
     background-size: cover;
     padding: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 html {
@@ -28,13 +30,14 @@ header {
     background-size: cover;
     padding: 10px;
     display: flex;
-    gap: 10px   ;
+    gap: 10px;
     }
 
 body {
-        background-color: beige;
-        margin: 10px;
-        min-height: 100%;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    background-color: beige;
+    min-height: 100%;
+    margin: 0px;
 }
     
 main {
@@ -57,7 +60,6 @@ main {
     background-color: rgb(70, 70, 59);
     border-radius: 6px 6px 0 0;
     border-bottom: none;
-    margin-right: auto;
 }
 
 a {
@@ -70,4 +72,20 @@ a {
 
 #salasana {
     margin-left: 1040px ;
+}
+
+.tabactivekirjaudu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+
+.tabkirjaudu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: rgb(70, 70, 59);
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
 }

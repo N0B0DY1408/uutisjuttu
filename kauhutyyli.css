@@ -4,9 +4,16 @@
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
-header, main, nav {
+main, nav {
     color: black;
     font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+header {
+    color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    display: flex;
+    height: 42px;
 }
 
 h1 {
@@ -62,4 +69,12 @@ nav {
 
 .NAPPI {
     margin-left: auto;
+}
+
+.logintabs {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: rgb(105, 0, 21);
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
 }

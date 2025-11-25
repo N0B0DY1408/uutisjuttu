@@ -29,6 +29,7 @@ header {
     padding: 10px;
     display: flex;
     gap: 10px   ;
+    height: 42px;
     }
 
 #body {
@@ -134,7 +135,6 @@ a {
 }
 
 .tabkirjaudu {
-    margin-left: 675px;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     padding: 10px;
     background-color: rgb(70, 70, 59);
@@ -148,5 +148,4 @@ a {
     background-color: beige;
     border-radius: 6px 6px 0 0; 
     border-bottom: none;
-    margin-left: 675px;
 }

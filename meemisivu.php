@@ -15,6 +15,10 @@
             <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
             <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
             <button id="meemisivu" class="tabactive"><a href="meemisivu.php">Meemisivu</a></button>
+            <div id="logintabs" style="margin-left: auto">
+                <button id="connect" class="tabkirjaudu"><a href="kirjaudu/connect.php">kirjaudu</a></button>
+                <button id="rekisteröidy" class="tabkirjaudu"><b><a href="kirjaudu/rekisteröidy.php">rekisteröidy</a></b></button>
+            </div>
         </header>
 
         <nav>

@@ -47,7 +47,16 @@ include "config.php";
     echo "<div class='success'>" . $_SESSION['success'] . "</div>";
     unset($_SESSION['success']);
 
-}
+    }
+    if(isset($_SESSION['warning'])) {
+        echo '<style>';
+        echo '.varoitus { color:red; }';
+        echo '</style>';
+        echo "<div class='varoitus'>" . $_SESSION['warning'] . "</div>";
+        unset($_SESSION['warning']);
+
+    }
+    ?>
 
 </body>
 </html>

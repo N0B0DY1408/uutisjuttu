@@ -11,10 +11,18 @@
     100% { color: rgb(255, 0, 0); border-color: rgb(255, 0, 0); }
 }   
 
-header, main, nav {
+main, nav {
     color: black;
     font-family: Brush Script MT, Brush Script Std, cursive;
     animation: rgbloop 6s linear infinite;
+}
+
+header {
+    color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    animation: rgbloop 6s linear infinite;
+    display: flex;
+    height: 42px;
 }
 
 @keyframes rgbLoop {
@@ -125,4 +133,12 @@ body, table, th, td, nav, main, section, aside, footer, .artikkeli, .tab, .tabac
 
 .NAPPI {
     margin-left: auto;
+}
+
+.tabkirjaudu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-image: url(kuvat/sateenkaari.gif);
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
 }

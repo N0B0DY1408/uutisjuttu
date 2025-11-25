@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kirjautumistyyli.css" />
+</head>
+
+<body>
+
 <?php
 include "config.php";
 date_default_timezone_set("Europe/Helsinki");
@@ -21,9 +33,12 @@ if ($resultCheck < 1) {
         } else if ($salasanamuunnos == TRUE) {
             $_SESSION['loggeduser45696'] = $username;
             echo $_SESSION['loggeduser45696'];
-            echo " on kirjautunut sisään onnistuneesti"
-            echo "<img src=../kuvat/thumbs-thumbs-up-kid-gif>";
-        }
+            echo nl2br(" on kirjautunut sisään onnistuneesti /n<img src=../kuvat/ok-nice.gif>")
+        }   
     }
 }
 ?>
+
+</body>
+
+</html>

@@ -1,68 +1,71 @@
-    <!DOCTYPE html>
-    <html lang="fi">
+<!DOCTYPE html>
+<html lang="fi">
 
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-            <link rel="stylesheet" href="uutistyyli.css" />
-            <title>mahtavaia uutisia</title>
-        </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="uutistyyli.css" />
+        <title>mahtavaia uutisia</title>
+    </head>
 
-        <body id="body">
-            <header>
-                <button id="pääsivu" class="tabactive"><a href="uutisjuttu.php">Pääsivu</a></button>
-                <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
-                <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
-                <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
-                <button id="kirjaudu" class="tabkirjaudu"><a href="kirjaudu/rekisteröidy.php">kirjaudu</a></button>
-               
-            </header>
+    <body id="body">
+        <header>
+            <button id="pääsivu" class="tabactive"><a href="uutisjuttu.php">Pääsivu</a></button>
+            <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
+            <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
+            <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
+            <div id="logintabs" style="margin-left: auto">
+                <button id="connect" class="tabkirjaudu"><a href="kirjaudu/connect.php">kirjaudu</a></button>
+                <button id="rekisteröidy" class="tabkirjaudu"><b><a href="kirjaudu/rekisteröidy.php">rekisteröidy</a></b></button>
+            </div>
+            
+        </header>
 
-            <nav>
-                <h1>tässä on sinulle mahtavia uutisia(ei siis mahtavia vaan hienoja suurin osa luultavasti aika surkeita)</h1>
+        <nav>
+            <h1>tässä on sinulle mahtavia uutisia(ei siis mahtavia vaan hienoja suurin osa luultavasti aika surkeita)</h1>
 
-                <button id="tummatilanappi">Tumman tila päälle/pois</button>
-            </nav>
+            <button id="tummatilanappi">Tumman tila päälle/pois</button>
+        </nav>
 
-            <main>
-                <div class="artikkeli">
-                    <h2 class="uutisotsikko">Yhdysvallat aloittaa uuden sotilasoperaation Latinalaisessa Amerikassa</h2>
+        <main>
+            <div class="artikkeli">
+                <h2 class="uutisotsikko">Yhdysvallat aloittaa uuden sotilasoperaation Latinalaisessa Amerikassa</h2>
 
-                    <a href="https://yle.fi/p/56-74-29/fi" class="uutiteksti">Jaakko Mannermaa</a>
+                <a href="https://yle.fi/p/56-74-29/fi" class="uutiteksti">Jaakko Mannermaa</a>
 
-                    <p>6:49</p>
+                <p>6:49</p>
 
-                    <img src="https://images.cdn.yle.fi/image/upload/ar_1.5001464986815118,c_fill,g_faces,h_423,w_636/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1763096800/39-15536296916b85953e0a" width="750" height="550">
-                    <figcaption>Yhdysvaltain puolustusministeri Pete Hegseth puhui merijalkaväen 250-vuotisjuhlassa Kaliforniassa<br>18. lokakuuta. Kuva: Oliver Contreras / AFP</figcaption>
+                <img src="https://images.cdn.yle.fi/image/upload/ar_1.5001464986815118,c_fill,g_faces,h_423,w_636/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1763096800/39-15536296916b85953e0a" width="750" height="550">
+                <figcaption>Yhdysvaltain puolustusministeri Pete Hegseth puhui merijalkaväen 250-vuotisjuhlassa Kaliforniassa<br>18. lokakuuta. Kuva: Oliver Contreras / AFP</figcaption>
 
-                    <p class="uutisteksti">Yhdysvallat on ilmoittanut uudesta sotilasoperaatiosta Latinalaisessa Amerikassa.Tarkoituksena on ”poistaa huumeterroristeja”.</p>
-                    <p class="uutisteksti">Asiasta kertoi Yhdysvaltain puolustusministeri Pete Hegseth torstaina <a href="https://x.com/SecWar/status/1989094923497316430">viestipalvelu X:ssä.</a></p>
-                    <p class="uutisteksti">-Operaatio puolustaa kotimaatamme, poistaa huumeterroristit pallonpuoliskoltammeja suojelee kansaamme huumeilta, hän kirjoitti.</p>
-                    <p class="uutisteksti">Toistaiseksi ei ole tietoa, mitä alueita Southern Speariksi nimetty operaatio koskee. Lisäksi on epäselvää, miten operaatio muuttaa nykyistä tilannetta.</p>
-                    <p class="uutisteksti">Syksyn aikana Yhdysvallat on iskenyt pariinkymmeneen alukseen kansainvälisillä vesillä Karibialla ja itäisellä Tyynellämerellä. Yhdysvaltain mukaan iskuissa on kuollut ainakin 76 ihmistä.</p>
-                    <p class="uutisteksti">Lähde: AFP</p>
-                </div>
+                <p class="uutisteksti">Yhdysvallat on ilmoittanut uudesta sotilasoperaatiosta Latinalaisessa Amerikassa.Tarkoituksena on ”poistaa huumeterroristeja”.</p>
+                <p class="uutisteksti">Asiasta kertoi Yhdysvaltain puolustusministeri Pete Hegseth torstaina <a href="https://x.com/SecWar/status/1989094923497316430">viestipalvelu X:ssä.</a></p>
+                <p class="uutisteksti">-Operaatio puolustaa kotimaatamme, poistaa huumeterroristit pallonpuoliskoltammeja suojelee kansaamme huumeilta, hän kirjoitti.</p>
+                <p class="uutisteksti">Toistaiseksi ei ole tietoa, mitä alueita Southern Speariksi nimetty operaatio koskee. Lisäksi on epäselvää, miten operaatio muuttaa nykyistä tilannetta.</p>
+                <p class="uutisteksti">Syksyn aikana Yhdysvallat on iskenyt pariinkymmeneen alukseen kansainvälisillä vesillä Karibialla ja itäisellä Tyynellämerellä. Yhdysvaltain mukaan iskuissa on kuollut ainakin 76 ihmistä.</p>
+                <p class="uutisteksti">Lähde: AFP</p>
+            </div>
 
-                <div class="artikkeli">
-                    <h2 class="uutisotsikko">Kansalaisaloite vesihuollon yksityistämistä vastaan etenee</h2>
+            <div class="artikkeli">
+                <h2 class="uutisotsikko">Kansalaisaloite vesihuollon yksityistämistä vastaan etenee</h2>
 
-                    <a href="https://yle.fi/p/56-74-496/fi">Hanna Holopainen</a>
+                <a href="https://yle.fi/p/56-74-496/fi">Hanna Holopainen</a>
 
-                    <p>7:37</p>
+                <p>7:37</p>
 
-                    <img src="https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1756227184/39-151171468ac1b2d8de2f" width="750" height="550">
-                    <figcaption>Lain muutoksen henki on, että vesihuolto halutaan pitää yhteisenä omaisuutena. Asiaa perustellaan myös muun muassa huoltovarmuudella. Kuvituskuva. Kuva: Kalle Niskala / Yle</figcaption>
+                <img src="https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1756227184/39-151171468ac1b2d8de2f" width="750" height="550">
+                <figcaption>Lain muutoksen henki on, että vesihuolto halutaan pitää yhteisenä omaisuutena. Asiaa perustellaan myös muun muassa huoltovarmuudella. Kuvituskuva. Kuva: Kalle Niskala / Yle</figcaption>
 
-                    <p class="uutisteksti">Kuuden vasemmistopoliitikon ryhmä laati julkista vesihuoltoa vaativan aloitteen vuonna 2020. Aloitetta myötäilevä vesihuoltolain muutos näyttäisi toteutuvan perjantaina.</p>
+                <p class="uutisteksti">Kuuden vasemmistopoliitikon ryhmä laati julkista vesihuoltoa vaativan aloitteen vuonna 2020. Aloitetta myötäilevä vesihuoltolain muutos näyttäisi toteutuvan perjantaina.</p>
 
-                    <a href="https://yle.fi/a/74-20193977">Avaa koko juttu yle:n sivuilla</a>
-                </div>
+                <a href="https://yle.fi/a/74-20193977">Avaa koko juttu yle:n sivuilla</a>
+            </div>
 
-            </main>
+        </main>
 
-            <script src="kaikkimahollinen.js"></script>
+        <script src="kaikkimahollinen.js"></script>
 
-            <a href="easter_egg.html" class="easter_egg">easter_egg</a>
-        </body>
-    </html>
+        <a href="easter_egg.html" class="easter_egg">easter_egg</a>
+    </body>
+</html>
