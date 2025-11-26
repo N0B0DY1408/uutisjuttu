@@ -15,7 +15,7 @@
     <button id="mahtavasivu" class="tab"><a href="../mahatavasivu.php">Mahatavasivu</a></button>
     <button id="meemisivu" class="tab"><a href="../meemisivu.php">Meemisivu</a></button>
     <div style="margin-left: auto">
-        <button id="connect" class="tabkirjaudu"><a href="connect.php">kirjaudu</a></button>
+        <button id="connect" class="tabkirjaudu"><a href="kirjaudu.php">kirjaudu</a></button>
         <button id="rekisteröidy" class="tabactivekirjaudu"><b><a href="rekisteröidy.php">rekisteröidy</a></b></button>
     </div>
 </nav>
@@ -29,12 +29,7 @@
         <tr>
             <td>
                 <label>sähköposti</label>
-            <input type="email" name="username" required value="
-            <?php if($isset($_SESSION['email']))
-                { echo $_SESSION['email'];
-                }
-                ?>
-            " />
+            <input type="email" name="username"/>
         </td>
         </tr>
         <tr>
