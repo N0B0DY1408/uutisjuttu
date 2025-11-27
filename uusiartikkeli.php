@@ -32,6 +32,7 @@ echo "<form action='kirjaudu/upload.php' method='post' enctype='multipart/form-d
 <p>teksti</p><input type='text' name='teksti'>
 <p>kuva</p><input type='file' name='file'>
 <p>kuvateksti</p><input type='text' name='kuvateksti'>
+<p>kategoria 1-4 (1=uutinen 2=kauhutarina 3=mahatava juttu 4=meemi)</p><input type='number' id='quantity' name='kategoria' min='1' max='4'>
 <input type='submit'>";
 echo "</form>"; 
 

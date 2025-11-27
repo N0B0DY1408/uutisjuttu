@@ -43,7 +43,7 @@ include 'kirjaudu/config.php';
                     echo '<h2 class="uutisotsikko">';
                     echo $row['otsikko'];
                     echo "</h2>";
-                    echo'<img src="';
+                    echo'<img src="kuvat/';
                     echo $row['kuva'];
                     echo '">';
                     echo "<p class='kuvateksti'>";
