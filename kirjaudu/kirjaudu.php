@@ -7,7 +7,7 @@ $password = mysqli_real_escape_string($conn, $_POST['password']);
 $sql = "SELECT * FROM users WHERE username = '$username'";
 $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) > 1) {
+if (mysqli_num_rows($result) < 1) {
     $_SESSION['warning'] = "käyttäjää ei löydy";
     header("location: password.php");
     exit();

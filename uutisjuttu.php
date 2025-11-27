@@ -1,3 +1,6 @@
+<?php
+include 'kirjaudu/config.php';
+?>
 <!DOCTYPE html>
 <html lang="fi">
 
@@ -34,7 +37,7 @@
             
         <?php
             require "./kirjaudu/connect.php";
-            $sql = "SELECT * FROM uutinen WHERE kategoria = 1 ORDER BY id";
+            $sql = "SELECT * FROM uutinen WHERE kategoria = 1 ORDER BY id DESC";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {

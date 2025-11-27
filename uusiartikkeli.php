@@ -1,3 +1,6 @@
+<?php
+include 'kirjaudu/config.php';
+?>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +16,7 @@
     <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
     <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
     <button id="lisää artikkeli" class="tabactive"><a href="uusiartikkeli.php">lisää uusi artikkeli</a></button>
-    <div style="margin-left: auto">
+    <div id="logintabs" style="margin-left: auto">
         <button id="connect" class="tabkirjaudu"><a href="kirjaudu.php">kirjaudu</a></button>
         <button id="rekisteröidy" class="tabkirjaudu"><b><a href="rekisteröidy.php">rekisteröidy</a></b></button>
     </div>
@@ -24,7 +27,7 @@
 <?php
 
 echo "<h1>Luo uusi artikkeli</h1>"; 
-echo "<form action= 'upload.php' method='post' ecntype='multipart/form-data'>
+echo "<form action='kirjaudu/upload.php' method='post' enctype='multipart/form-data'>
 <p>otsikko</p><input type='text' name='otsikko'>
 <p>teksti</p><input type='text' name='teksti'>
 <p>kuva</p><input type='file' name='file'>

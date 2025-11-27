@@ -1,3 +1,6 @@
+<?php
+include 'kirjaudu/config.php';
+?>
 <!DOCTYPE html>
 <html lang="fi">
 
@@ -15,6 +18,7 @@
             <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
             <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
             <button id="meemisivu" class="tabactive"><a href="meemisivu.php">Meemisivu</a></button>
+            <button id="lisää artikkeli" class="tab"><a href="uusiartikkeli.php">lisää uusi artikkeli</a></button>
             <div id="logintabs" style="margin-left: auto">
                 <button id="connect" class="tabkirjaudu"><a href="kirjaudu/connect.php">kirjaudu</a></button>
                 <button id="rekisteröidy" class="tabkirjaudu"><b><a href="kirjaudu/rekisteröidy.php">rekisteröidy</a></b></button>
@@ -31,7 +35,7 @@
 
         <?php
             require "./kirjaudu/connect.php";
-            $sql = "SELECT * FROM uutinen WHERE kategoria = 4 ORDER BY id";
+            $sql = "SELECT * FROM uutinen WHERE kategoria = 4 ORDER BY id DESC";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
