@@ -14,6 +14,8 @@ nav {
     background-repeat: no-repeat; 
     background-size: cover;
     padding: 10px;
+    display: flexbox;
+    gap: 10px;
 }
 
 html {
@@ -33,8 +35,10 @@ header {
     }
 
 #body {
-        background-color: beige;
-        min-height: 100%;
+    background-color: beige;
+    min-height: 100%;
+    margin: 10px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
     
 main {
@@ -144,6 +148,7 @@ a {
     background-color: rgb(70, 70, 59);
     border-radius: 6px 6px 0 0;
     border-bottom: none;
+    display: inline-flex;
 }
 
 .tummatila .tabkirjaudu {

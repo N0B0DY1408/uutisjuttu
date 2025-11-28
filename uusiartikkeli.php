@@ -10,16 +10,22 @@ include 'kirjaudu/config.php';
     <title>uusiartikkeli</title>
 </head>
 
-<nav>
-    <button id="pääsivu" class="tab"><a href="uutisjuttu.php">Pääsivu</a></button>
+<header>
+<button id="pääsivu" class="tab"><a href="uutisjuttu.php">Pääsivu</a></button>
     <button id="kauhusivu" class="tab"><a href="kauhusivu.php">Kauhusivu</a></button>
     <button id="mahtavasivu" class="tab"><a href="mahatavasivu.php">Mahatavasivu</a></button>
     <button id="meemisivu" class="tab"><a href="meemisivu.php">Meemisivu</a></button>
     <button id="lisää artikkeli" class="tabactive"><a href="uusiartikkeli.php">lisää uusi artikkeli</a></button>
     <div id="logintabs" style="margin-left: auto">
-        <button id="connect" class="tabkirjaudu"><a href="kirjaudu.php">kirjaudu</a></button>
-        <button id="rekisteröidy" class="tabkirjaudu"><b><a href="rekisteröidy.php">rekisteröidy</a></b></button>
+        <button id="connect" class="tabkirjaudu"><a href="kirjaudu/kirjaudu.php">kirjaudu</a></button>
+        <button id="rekisteröidy" class="tabkirjaudu"><b><a href="kirjaudu/rekisteröidy.php">rekisteröidy</a></b></button>
     </div>
+</header>
+
+<nav>
+    <h1>tässä saat itse lisätä uusia artikkeleita</h1>
+
+    <button id="tummatilanappi">Tumman tila päälle/pois</button>
 </nav>
 
 <body id="body" class="uusiartikkeli">
@@ -40,5 +46,7 @@ echo "</form>";
 ?>
 
 </body>
+
+<script src="kaikkimahollinen.js"></script>
 
 </html>

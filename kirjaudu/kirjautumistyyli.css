@@ -14,8 +14,15 @@ nav {
     background-repeat: no-repeat; 
     background-size: cover;
     padding: 10px;
-    display: flex;
     gap: 10px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
 }
 
 html {
@@ -37,7 +44,7 @@ body {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     background-color: beige;
     min-height: 100%;
-    margin: 0px;
+    margin: 10px;
 }
     
 main {
@@ -88,4 +95,34 @@ a {
     background-color: rgb(70, 70, 59);
     border-radius: 6px 6px 0 0;
     border-bottom: none;
+}
+
+.tummatila {
+    background-color: rgb(70, 70, 59);
+    color: white;
+}
+
+.tummatila header, .tummatila main, .tummatila body, .tummatila head, .tummatila html, .tummatila nav, .tummatila .tabactive, .tummatila h1, .tummatila form {
+    background-color: rgb(70, 70, 59);
+}
+
+.tummatila .tab, .tummatila .tabkirjaudu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 6px 6px 0 0; 
+    border-bottom: none;
+}
+
+.tummatila .tabactivekirjaudu {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
+    background-color: rgb(70, 70, 59);
+    border-radius: 6px 6px 0 0; 
+    border-bottom: none;
+}
+
+#tummatilanappi {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    padding: 10px;
 }

@@ -11,20 +11,25 @@ include "config.php";
     <title>uutisjuttu</title>
 </head>
 
-<nav>
+<header>
     <button id="pääsivu" class="tab"><a href="../uutisjuttu.php">Pääsivu</a></button>
     <button id="kauhusivu" class="tab"><a href="../kauhusivu.php">Kauhusivu</a></button>
     <button id="mahtavasivu" class="tab"><a href="../mahatavasivu.php">Mahatavasivu</a></button>
     <button id="meemisivu" class="tab"><a href="../meemisivu.php">Meemisivu</a></button>
+    <button id="lisää artikkeli" class="tab"><a href="../uusiartikkeli.php">lisää uusi artikkeli</a></button>
     <div style="margin-left: auto">
-        <button id="connect" class="tabkirjaudu"><a href="kirjaudu.php">kirjaudu</a></button>
-        <button id="rekisteröidy" class="tabactivekirjaudu"><b><a href="rekisteröidy.php">rekisteröidy</a></b></button>
+        <button id="connect" class="tabactivekirjaudu"><a href="kirjaudu.php">kirjaudu</a></button>
+        <button id="rekisteröidy" class="tabkirjaudu"><b><a href="rekisteröidy.php">rekisteröidy</a></b></button>
     </div>
+</header>
+
+<nav>
+        <h1>Kirjaudu</h1>
+
+    <button id="tummatilanappi">Tumman tila päälle/pois</button>
 </nav>
 
 <body>
-    
-    <h1>Kirjaudu</h1>
 
     <form action="kirjaudu.php" method="post">
     <label>sähköposti:</label><input type="email" name="username" required><br>
@@ -51,4 +56,6 @@ include "config.php";
     ?>
 
 </body>
+
+    <script src="../kaikkimahollinen.js"></script>
 </html>

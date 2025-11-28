@@ -4,25 +4,30 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kirjautumistyyli.css"/>
+    <link rel="stylesheet" href="kirjautumistyyli.css" />
     <title>uutisjuttu</title>
 
 </head>
 
-<nav>
+<header>
     <button id="pääsivu" class="tab"><a href="../uutisjuttu.php">Pääsivu</a></button>
     <button id="kauhusivu" class="tab"><a href="../kauhusivu.php">Kauhusivu</a></button>
     <button id="mahtavasivu" class="tab"><a href="../mahatavasivu.php">Mahatavasivu</a></button>
     <button id="meemisivu" class="tab"><a href="../meemisivu.php">Meemisivu</a></button>
+    <button id="lisää artikkeli" class="tab"><a href="../uusiartikkeli.php">lisää uusi artikkeli</a></button>
     <div style="margin-left: auto">
         <button id="connect" class="tabkirjaudu"><a href="kirjaudu.php">kirjaudu</a></button>
         <button id="rekisteröidy" class="tabactivekirjaudu"><b><a href="rekisteröidy.php">rekisteröidy</a></b></button>
     </div>
+</header>
+
+<nav>
+    <h1>rekisteröidy</h1>
+
+    <button id="tummatilanappi">Tumman tila päälle/pois</button>
 </nav>
 
 <body>
-
-<h1>rekisteröidy</h1>
 
 <form action="signup.php" method="post">
     <table>
@@ -56,5 +61,7 @@ if(isset($_SESSION['warning'])) {
 ?>
 
 </body>
+
+<script src="../kaikkimahollinen.js"></script>
 
 </html>
